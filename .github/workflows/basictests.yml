@@ -1,0 +1,21 @@
+name: Basic Tests
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  lab9-basic-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run validation tests
+        run: |
+          chmod +x validate-data.sh
+          bash validate-data.sh Kate 0871234567
+          bash validate-data.sh Kate 087123456789
+          bash validate-data.sh KateStarissaKate 0871234567
