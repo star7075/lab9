@@ -1,0 +1,100 @@
+  541  git branch myCloudBranch
+  542  nano myID.txt
+  543  git add .
+  544  git commit -m "Second Version"
+  545  git push -u origin main]
+  546  git push -u origin main
+  547  ls
+  548  git restore --source main -- myID.txt
+  549  history > history.txt
+  550  git add history.txt
+  551  git commit -m "adding history text"
+  552  git push -u oirgin main
+  553  git push -u origin main
+  554  git restore --source main -- user.sh
+  555  clear
+  556  ls
+  557  cd devops
+  558  gh repo create lab9 --public --description "GitHub Actions Lab 9"
+  559  gh repo view --web
+  560  cd lab9
+  561  ls
+  562  git clone git@github.com:star7075/lab9.git
+  563  ls
+  564  cd lab9
+  565  git remote -v
+  566  gh label create EPIC --description "Epic issue" --color FF0000
+  567  gh label list
+  568  gh issue create --title "do lab9" --body "lab9" --label EPIC
+  569  gh issue create --title "create validate-data script" --body "Creating the script"
+  570  gh issue list
+  571  gh issue edit 2 --add-assignee @me
+  572  gh issue view 2
+  573  nano validate-data.sh
+  574  cat validate-data.sh
+  575  chmod +x validate-data.sh
+  576  ./validate-data.sh Kate 0871234567
+  577  ./validate-data.sh Kate 087123456789
+  578  ./validate-data.sh KateStarisaKate 087123456789
+  579  ./validate-data.sh KateStarisaKate 0871234567
+  580  bash validate-data.sh Kate 0871234567
+  581  bash validate-data.sh Kate 087123456789
+  582  bash validate-data.sh KateStarisaKate 0871234567
+  583  gh issue create --title "create yaml test script" --body "Creating the basictests.yml"
+  584  gh issue list
+  585  gh issue edit 3 --add-assignee @me
+  586  ls -la
+  587  mkdir -p .github/workflows
+  588  nano .github/workflows/basictests.yml
+  589  cat basictests.yml
+  590  ls
+  591  nano .github/workflows/basictests.yml
+  592  ls -la
+  593  ls -la .github/workflows
+  594  find . -maxdepth 3 -type f
+  595  clear
+  596  git branch
+  597  git status
+  598  git add .
+  599  git commit -m "Adding validation script"
+  600  git push -u origin main
+  601  gh issue close 1
+  602  gh issue close 2
+  603  gh issue close 3
+  604  gh issue list
+  605  gh issue create --title "create lab9 project" --body "Creating GitHub Project"
+  606  gh issue list
+  607  gh issue edit 4 --add-assignee @me
+  608  gh issue edit 4 --add-label enhancement
+  609  clear
+  610  gh issue create --title "create test branch" --body "step 11 lab9"
+  611  gh issue list
+  612  gh issue edit 5 --add-label enhancement --add-assignee @me
+  613  clear
+  614  git switch main
+  615  git switch -c test
+  616  git branch
+  617  nano validate-data.sh
+  618  git add validate-data.sh
+  619  git commit -m "Increase maximum name length to 20"
+  620  git push -u origin test
+  621  nano .github/workflows/basictests.yml
+  622  git add .github/workflows/basictests.yml
+  623  git commit -m "Enable workflow on main and test branches"
+  624  git push origin test
+  625  git commit -m "Enable workflow on main and test branches"
+  626  nano .github/workflows/basictests.yml
+  627  git add .github/workflows/basictests.yml
+  628  git commit -m "Enable workflow on main and test branches"
+  629  git push origin test
+  630  nano .github/workflows/basictests.yml
+  631  [200~git add .github/workflows/basictests.yml
+  632  git commit -m "Fix GitHub Actions workflow"
+  633  git add .github/workflows/basictests.yml && git commit -m "Fix GitHub Actions workflow" && git push origin test
+  634  git switch test && ls -la .github/workflows
+  635  history > history.txt
+  636  nano history.txt
+  637  ls
+  638  rm history.txt
+  639  ls
+  640  history 100 > history.txt
