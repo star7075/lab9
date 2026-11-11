@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-      - teston:
+      - teston
 
 jobs:
   lab9-basic-tests:
